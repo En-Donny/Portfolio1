@@ -1,0 +1,2223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+	<link rel="stylesheet" type="text/css" href="портфолио№1.css">
+
+	<title>Портфолио №1</title>
+	<style>
+		* a {
+			text-decoration: none;
+		}
+
+		.navbar {
+			padding: 20px 10px;
+		}
+
+		.navbar-dark .navbar-nav .nav-link {
+			color: white;
+		}
+
+		.navbar-dark .navbar-nav .nav-item {
+			display: block;
+			border-radius: 3px;
+			-webkit-transform: scale(1, 1);
+			-webkit-transition-timing-function: ease-out;
+			-webkit-transition-duration: 250ms;
+			z-index: 1;
+		}
+
+		.navbar-dark .navbar-nav .nav-item:hover {
+			background-color: #898b8c;
+			-webkit-transform: scale(1.02, 1.02);
+			-webkit-transition-timing-function: ease-out;
+			-webkit-transition-duration: 250ms;
+			z-index: 2;
+		}
+
+		.navbar-dark .navbar-nav .nav-item .nav-link:hover {
+
+			color: black;
+		}
+
+		#hero {
+			position: relative;
+			display: block;
+			box-sizing: border-box;
+			width: 100%;
+			height: auto;
+			background: url(https://images.pexels.com/photos/3617500/pexels-photo-3617500.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500) fixed top center;
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			min-height: 700px !important;
+		}
+
+		#hero:before {
+			content: "";
+			background: rgba(0, 0, 0, 0.5);
+			position: absolute;
+			bottom: 0;
+			top: 0;
+			left: 0;
+			right: 0;
+		}
+
+		#hero .container {
+			position: relative;
+			padding-top: 20px;
+			display: block;
+			box-sizing: border-box;
+
+		}
+
+		#hero h1 {
+			margin: 0;
+			font-size: 56px;
+			font-weight: 700;
+			line-height: 64px;
+			color: white;
+			font-family: "Poppins", sans-serif;
+		}
+
+		#hero h2 {
+
+			font-size: 32px;
+
+			color: white;
+			font-family: "Poppins", sans-serif;
+		}
+
+
+		#hero .icon-box h3 {
+			font-weight: 700;
+			margin-top: 10px;
+			font-size: 20px;
+			line-height: 26px;
+
+
+		}
+
+		#hero .icon-box h3 a {
+			color: white;
+
+			text-decoration: none;
+		}
+
+		#hero .icon-box>h3>a:hover {
+			color: #dac900;
+
+		}
+
+
+		.icon-box {
+
+
+
+			transform: scale(1, 1);
+			transition-timing-function: ease-out;
+			transition-duration: 100ms;
+			z-index: 1;
+			text-align: center;
+
+		}
+
+		.icon-box:hover {
+
+
+
+			transform: scale(1.05, 1.05);
+			transition-timing-function: ease-out;
+			transition-duration: 100ms;
+			z-index: 2;
+
+
+		}
+
+
+		.about li {
+			list-style-type: none;
+		}
+
+		.about li svg {
+			margin-right: 10px;
+		}
+
+		.cta {
+			background: linear-gradient(rgba(2, 2, 2, .3), rgba(2, 2, 2, .7)), url(https://images.pexels.com/photos/3617500/pexels-photo-3617500.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500) fixed center center;
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			padding: 80px 0;
+			color: white;
+			box-sizing: border-box;
+			bottom: 0;
+		}
+
+		.cta h3 {
+			font-weight: 700;
+			font-size: 28px;
+		}
+
+		.cta-btn {
+			font-weight: 600;
+			font-size: 16px;
+			letter-spacing: 1px;
+			display: inline-block;
+			padding: 4px 20px;
+			border: 2px solid white;
+			border-radius: 4px;
+			color: white;
+			margin-top: 10px;
+		}
+
+
+		.cta-btn:hover {
+			background-color: #dac900;
+			border-color: #dac900;
+			color: #151515;
+		}
+
+
+		.carousel-indicators {
+			bottom: -20px;
+		}
+
+		.carousel-indicators li {
+			background-color: #424242 !important;
+			border-radius: 5% !important;
+		}
+
+
+		#blogCarousel {
+			position: relative !important;
+			display: block;
+			box-sizing: border-box !important;
+		}
+
+
+
+		.carousel-control-prev-icon {
+
+
+			background-image: url("https://cdn.icon-icons.com/icons2/933/PNG/512/keyboard-left-arrow-button_icon-icons.com_72692.png");
+
+		}
+
+		.carousel-control-next-icon {
+
+
+			background-image: url("https://cdn.icon-icons.com/icons2/933/PNG/512/keyboard-right-arrow-button-1_icon-icons.com_72690.png");
+
+
+		}
+
+
+		.tim {
+			padding: 50px;
+		}
+
+		.tim .member-img {
+			margin-bottom: 20px;
+			overflow: hidden;
+			border-radius: 5px;
+			box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+
+
+
+		}
+
+		.tim .member-img .member-img-img {
+			position: relative;
+			overflow: hidden;
+		}
+
+		.tim .member-img .member-img-img img {
+
+			height: auto;
+		}
+
+		.tim .member-img .social {
+			position: absolute;
+			left: 0;
+			bottom: 5px;
+			right: 0;
+			opacity: 0;
+			transition: ease-in-out 0.3;
+		}
+
+
+		.tim .member-img .social a {
+			vertical-align: middle;
+			transition: color 0.3s;
+			color: #151515;
+			margin: 0 3px;
+			padding-top: 4px;
+			padding-bottom: 7px;
+			border-radius: 4px;
+			width: 36px;
+			height: 36px;
+			background: rgba(255, 255, 255, 0.3);
+			display: inline-block;
+			text-align: center;
+		}
+
+
+		.tim .member-img .social a:hover {
+			background: #ffc451;
+		}
+
+		.tim .member-img .member-info {
+			padding: 25px 15px;
+		}
+
+		.tim .member-img .member-info h4 {
+			font-weight: 700;
+			margin-bottom: 5px;
+			font-size: 18px;
+		}
+
+
+		.tim .member-img .member-info p {
+			font-style: italic;
+			line-height: 26px;
+			font-size: 14px;
+			color: #777777;
+		}
+
+		.tim .member-img:hover .social {
+			opacity: 1;
+
+		}
+
+		.tim .member-img .member-info span {
+			display: block;
+			font-size: 13px;
+			font-weight: 400;
+
+		}
+
+
+
+		.services .icon-box {
+			border-radius: 3px;
+			border: 1px solid slategrey;
+			padding: 40px 20px;
+			transition: all ease-in-out 0.3s;
+			margin-bottom: 4%;
+		}
+
+		.services .icon-box .icon {
+			margin: 0 auto;
+			width: 64px;
+			height: 64px;
+			background: #dac900;
+			border-radius: 5px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			transition: all 0.3s;
+			margin-bottom: 3%;
+		}
+
+
+		.services .icon-box h4 {
+			font-weight: 700;
+			margin-bottom: 15px;
+			font-size: 24px;
+		}
+
+
+		.services .icon-box p {
+			font-size: 14px;
+			margin-bottom: 0;
+			line-height: 24px;
+		}
+
+
+		.services .icon-box:hover {
+
+			border-color: white;
+			box-shadow: 0px 0 25px rgba(0, 0, 0, 0.5);
+			transform: translateY(-8px);
+		}
+
+
+		.contact .info .info-icon {
+			background: #dac900;
+			width: 44px;
+			height: 44px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 4px;
+			float: left;
+			margin-right: 15px;
+		}
+
+		.contact .info h4 {
+			font-size: 22px;
+			font-weight: 600;
+			margin-bottom: 5px;
+
+		}
+
+
+		.contact .info p {
+			font-size: 14px;
+
+
+		}
+
+
+		.footer-top {
+			background: #151515;
+			color: white;
+			border-bottom: 1px solid #1a2b3c;
+			padding: 16px 10px;
+		}
+
+		.footer-top .footer-info {
+			margin-bottom: 3px;
+			clear: both;
+		}
+
+		.footer-top .footer-links ul {
+			width: 50%;
+			text-align: center;
+			list-style-type: none;
+			padding: 0;
+			margin: 0% 25% 0% 25%;
+		}
+
+		.footer-top .footer-links ul li {
+			padding: 10px 0;
+			color: white;
+			font-size: 18px;
+			line-height: 1;
+			display: flex;
+			margin: 0% 25% 0% 25%;
+			justify-content: center;
+
+		}
+
+
+		.footer-links ul li a {
+
+			color: white;
+
+		}
+
+
+		.footer-links ul li a:hover {
+
+			color: #ffc451;
+
+		}
+
+
+		.footer-top .footer-info h3 {
+			font-size: 28px;
+			margin: 0 0 20px 0;
+			padding: 2px 0;
+			line-height: 1;
+			font-weight: 700;
+			text-transform: uppercase;
+
+		}
+
+		.footer-top .footer-info p {
+
+			font-size: 14px;
+			line-height: 24px;
+			margin-bottom: 0;
+
+		}
+
+
+		.footer-top .social-links .soc a {
+
+			text-align: center;
+			position: absolute;
+			display: inline-block;
+			box-sizing: border-box;
+			background: url(иконки/vk.png);
+			width: 40px;
+			height: 40px;
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-color: white;
+			border-radius: 50%;
+			padding: 10px;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: auto;
+
+		}
+
+
+		.footer-top .social-links {
+			float: left;
+			width: 80%;
+			display: grid;
+			grid-template-columns: 25% 25% 25% 25%;
+			grid-gap: 0.5em;
+			margin: 1% 10% 1% 10%;
+			justify-items: center;
+			clear: both;
+		}
+
+
+		.footer-top .social-links .soc {
+			display: block;
+			position: relative;
+			width: 48px;
+			height: 48px;
+			background: red;
+			justify-content: center;
+			align-items: center;
+			background: linear-gradient(to right bottom, red, purple);
+			border-radius: 50%;
+			transition: all ease-in-out 0.3s;
+			vertical-align: middle
+		}
+
+		.footer-top .social-links .soc:hover {
+			transform: translateY(-5px);
+
+		}
+
+		.footer-top .social-links .face a {
+
+			background: url(иконки/face.png);
+			background-size: 40px auto;
+
+		}
+
+		.footer-top .social-links .inst a {
+
+			background: url(https://fructcode.com/uploads/pictures/icons/social-networks/icon-in.svg);
+			background-size: 30px auto;
+			background-repeat: no-repeat;
+			background-position: center;
+
+		}
+
+		.footer-top h4 {
+			font-size: 30px;
+			font-weight: 900;
+			padding-bottom: 12px;
+		}
+
+		.footer-links {
+			margin-bottom: 20px;
+		}
+
+		.footer-top hr {
+
+			height: 20px;
+			background-color: #151515;
+			border-style: solid;
+			border-color: #f8f9fa;
+			border-width: 0 0 2px 0;
+			border-radius: 20px;
+
+
+		}
+
+
+		.footer-top .footer-info hr {
+			margin-top: 20px;
+			float: left;
+			height: 20px;
+			background: white;
+		}
+
+		@media (min-width: 992px) {
+			.footer-top hr {
+				display: none;
+			}
+		}
+
+		@media (min-width: 768px) {
+			.footer-top hr.ml {
+				display: none;
+			}
+		}
+
+
+		@media (max-width: 767px) {
+			.footer-top hr.mlg {
+				display: none;
+			}
+		}
+
+
+		.otz .rait {
+			margin-top: 2%;
+		}
+
+		.otz .rait a .vnutr {
+			color: #151515;
+			font-size: 16px;
+			font-weight: 500;
+		}
+
+
+		.otz .rait a .rait-line {
+			display: flex;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			margin-bottom: 2%;
+			align-items: center;
+			border-radius: 10px;
+			height: auto;
+			color: white;
+
+			padding: 6px 8px;
+			background: linear-gradient(to right, #ff7400, #ffbc0b);
+		}
+
+		.otz .rait a .rait-line svg {
+			margin-left: 5px;
+		}
+
+		.otz .rait a .rait-line span {
+			margin-left: 2px;
+		}
+
+		.otz .rait a .rait-line-5 {
+			width: 50%;
+		}
+
+		.otz .rait a .rait-line-4 {
+			width: 42%;
+		}
+
+		.otz .rait a .rait-line-3 {
+			width: 36%;
+		}
+
+		.otz .rait a .rait-line-2 {
+			width: 28%;
+		}
+
+
+		.otz .rait a .rait-line-1 {
+			width: 20%
+		}
+
+
+		.feed {
+			margin-top: 3%;
+			margin-bottom: 3%;
+		}
+
+
+		.Opinion__avatar {
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			width: 30px;
+			height: 30px;
+			margin-right: 10px;
+			border-radius: 50%;
+			background-color: #dfdfe1;
+			object-fit: cover;
+		}
+
+		.Icon {
+			float: left;
+			fill: currentColor;
+		}
+
+		.hum-desk {
+			display: flex;
+			align-items: center;
+			float: left;
+		}
+
+		.hum span {
+			margin-left: 10px;
+			font-size: 18px;
+			font-weight: 500;
+		}
+
+
+
+
+		.hum .ocen {
+
+			float: right;
+
+		}
+
+		.hum .star-rating__star {
+			display: inline-block;
+
+		}
+
+		.hum .ocen p {
+			font-size: 14px;
+			font-weight: 500;
+		}
+
+
+		.star-rating__star[data-state=selected] svg path {
+			fill: #ff7400;
+			stroke: #ff7400;
+		}
+
+		.star-rating__star svg path {
+			fill: transparent;
+			stroke: #ff7400;
+		}
+
+		.comment {
+			margin-top: 5%;
+		}
+
+		.comment p {
+			margin-top: 1%;
+			line-height: 35px;
+		}
+
+		.comment-btn {
+			background: linear-gradient(to top, #ff7400, #ffbc0b);
+			color: white;
+			border-radius: 6px;
+			float: right;
+			padding: 8px 22px;
+			font-size: 20px;
+			font-weight: 500;
+			border: 1px solid transparent;
+			border-top-color: #ffbc0b;
+		}
+
+		.feed-head .accordion button {
+			border-color: white !important;
+			outline: none !important;
+
+		}
+
+		.accordion-button:focus {
+			z-index: 3;
+			box-shadow: none;
+			outline: none !important;
+
+		}
+
+		.accordion-button::after {
+
+			margin-left: 10px !important;
+			outline: none !important;
+
+		}
+
+		.accordion-button:not(.collapsed) {
+			color: #0c63e4;
+			outline: none !important;
+			background-color: white;
+			box-shadow: none;
+
+		}
+
+
+
+		button:focus:not(:focus-visible) {
+			outline: none;
+			outline-color: white;
+		}
+
+		.accordion-item:last-of-type .accordion-button.collapsed {
+			border-color: white;
+		}
+
+		.accordion-item:last-of-type .accordion-button.collapsed {
+			border-color: white;
+		}
+
+		.feed {
+			margin-bottom: 10%;
+		}
+	</style>
+</head>
+
+<body>
+
+
+
+	<header id="header">
+
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+			<div class="container">
+				<a href="" class="navbar-brand">PORTFOLIO</a>
+
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent"
+					aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+
+				<div class="collapse navbar-collapse text-center" id="navContent">
+
+
+					<ul class="navbar-nav mx-auto mb-1 mb-lg-0 text-center">
+						<li class="nav-item">
+							<a href="" class="nav-link">Home</a>
+						</li>
+
+						<li class="nav-item">
+							<a href="" class="nav-link">Blog</a>
+						</li>
+
+						<li class="nav-item">
+							<a href="" class="nav-link">About Us</a>
+						</li>
+
+						<li class="nav-item dropdown">
+							<a href="" class="nav-link dropdown-toggle" id="navDrop" role="button " data-bs-toggle="dropdown"
+								aria-expanded="false">Dropdown</a>
+
+							<ul class="dropdown-menu text-center mb-2" aria-labelledby="navDrop">
+								<li><a href="" class="dropdown-item">Вот так вот</a></li>
+
+								<li><a href="" class="dropdown-item">Делается</a></li>
+
+								<li><a href="" class="dropdown-item">Выпадающее меню в Bootrsap</a></li>
+							</ul>
+
+
+
+						</li>
+
+					</ul>
+
+					<form action="#" class="d-flex">
+						<input type="search" class="form-control me-2" placeholder="Search">
+
+						<button type="submit" class="btn btn-outline-light  ">Search</button>
+
+					</form>
+
+
+				</div>
+
+			</div>
+		</nav>
+
+
+	</header>
+
+
+
+
+
+	<section id="hero" class="d-flex align-items-center ">
+
+		<div class="container text-center mt-5 ">
+			<div class="row justify-content-center">
+				<div class="col-md-6 col-lg-8">
+					<h1>Hello world</h1>
+					<h2>Lorem ipsum dolor sit amet lorem ipsum dolor sit amet </h2>
+
+					<div class="row mt-4 justify-content-center ">
+						<div class="col-xl-2 col-md-4 col-6">
+							<div class="icon-box">
+								<svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" fill="#dac900"
+									class="bi bi-bootstrap" viewBox="0 0 16 16">
+									<path
+										d="M5.062 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062V12zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762V8.162h1.822c1.236 0 1.887.463 1.887 1.348 0 .896-.627 1.377-1.811 1.377H6.375z" />
+									<path
+										d="M0 4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4zm4-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3H4z" />
+								</svg>
+
+								<h3><a href="#">Lorem ipsum</a></h3>
+							</div>
+						</div>
+
+
+
+
+						<div class="col-xl-2 col-md-4 col-6">
+							<div class="icon-box">
+								<svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" fill="#dac900"
+									class="bi bi-bootstrap" viewBox="0 0 16 16">
+									<path
+										d="M5.062 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062V12zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762V8.162h1.822c1.236 0 1.887.463 1.887 1.348 0 .896-.627 1.377-1.811 1.377H6.375z" />
+									<path
+										d="M0 4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4zm4-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3H4z" />
+								</svg>
+
+								<h3><a href="#">Lorem ipsum</a></h3>
+							</div>
+						</div>
+
+
+
+						<div class="col-xl-2 col-md-4 col-6">
+							<div class="icon-box">
+								<svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" fill="#dac900"
+									class="bi bi-bootstrap" viewBox="0 0 16 16">
+									<path
+										d="M5.062 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062V12zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762V8.162h1.822c1.236 0 1.887.463 1.887 1.348 0 .896-.627 1.377-1.811 1.377H6.375z" />
+									<path
+										d="M0 4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4zm4-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3H4z" />
+								</svg>
+
+								<h3><a href="#">Lorem ipsum</a></h3>
+							</div>
+						</div>
+
+
+						<div class="col-xl-2 col-md-4 col-6">
+							<div class="icon-box">
+								<svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" fill="#dac900"
+									class="bi bi-bootstrap" viewBox="0 0 16 16">
+									<path
+										d="M5.062 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062V12zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762V8.162h1.822c1.236 0 1.887.463 1.887 1.348 0 .896-.627 1.377-1.811 1.377H6.375z" />
+									<path
+										d="M0 4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4zm4-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3H4z" />
+								</svg>
+
+								<h3><a href="#">Lorem ipsum</a></h3>
+							</div>
+						</div>
+
+
+						<div class="col-xl-2 col-md-4 col-6">
+							<div class="icon-box">
+								<svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" fill="#dac900"
+									class="bi bi-bootstrap" viewBox="0 0 16 16">
+									<path
+										d="M5.062 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062V12zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762V8.162h1.822c1.236 0 1.887.463 1.887 1.348 0 .896-.627 1.377-1.811 1.377H6.375z" />
+									<path
+										d="M0 4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4zm4-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3H4z" />
+								</svg>
+
+								<h3><a href="#">Lorem ipsum</a></h3>
+							</div>
+						</div>
+
+
+					</div>
+
+				</div>
+
+	</section>
+
+
+
+
+
+
+
+	<section class="about my-5 justify-content-center" id="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 order-1 order-lg-2 mx-auto">
+					<img
+						src="https://images.pexels.com/photos/3156381/pexels-photo-3156381.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+						alt="" class="img-fluid mx-auto">
+				</div>
+
+				<div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 content">
+					<h3>Lorem ipsum dolor sit amet lorem ipsum dolor sit amet</h3>
+					<p class="font-italic">Lorem ipsum dolor sit amet lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+						lorem ipsum dolor sit amet</p>
+					<ul>
+						<li>
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+								class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+								<path
+									d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+							</svg>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias, placeat.
+
+						</li>
+
+						<li>
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+								class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+								<path
+									d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+							</svg>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias, placeat Lorem, ipsum
+							dolor sit amet consectetur adipisicing elit. Corporis officiis quibusdam, illo..
+
+						</li>
+
+						<li>
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+								class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+								<path
+									d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+							</svg>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias, placeat Lorem ipsum
+							dolor sit..
+
+						</li>
+
+						<li>
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+								class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+								<path
+									d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+							</svg>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias, placeat Lorem, ipsum..
+
+						</li>
+					</ul>
+					<p>Lorem ipsum, dolor sit amet consectetur, adipisicing elit. In rem necessitatibus laborum doloremque
+						dolorum nam commodi molestias veniam numquam consequuntur. Ipsa adipisci, doloremque ipsam aspernatur.
+						Deleniti, a? Accusantium, tempore ut.</p>
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+
+
+
+
+	<section class="cta mb-5">
+		<div class="container text-center">
+			<h3>Call to action</h3>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Quaerat maiores tenetur fuga ipsum blanditiis eos
+				iste ipsa voluptas nihil, odio!</p>
+			<a href="#" class="cta-btn">Call to action</a>
+		</div>
+	</section>
+
+
+	<!--
+<div class="carousel slide  " id="blogCarousel" data-bs-ride="carousel">
+	
+	<ol class="carousel-indicators">
+		<li  data-bs-target="#blogCarousel" data-bs-slide-to="0" class="active"></li>
+		<li data-bs-target="#blogCarousel" data-bs-slide-to="1"></li>
+	</ol>
+	<div class="container carousel-inner ">
+	<div class="carousel-item active">
+		<div class="row">
+			<div class="col-md-3">
+				<a href="#">
+					<img class="w-100" src="https://my-master.net.ua/wp-content/uploads/2019/05/google-kiev-ua.jpg">
+				</a>
+			</div>
+
+			<div class="col-md-3">
+				<a href="#">
+					<img class="w-100" src="https://my-master.net.ua/wp-content/uploads/2019/05/google-kiev-ua.jpg">
+				</a>
+			</div>
+
+			<div class="col-md-3">
+				<a href="">
+					<img class="w-100" src="https://my-master.net.ua/wp-content/uploads/2019/05/google-kiev-ua.jpg">
+				</a>
+			</div>
+
+			<div class="col-md-3">
+				<a href="">
+					<img class="w-100" src="https://my-master.net.ua/wp-content/uploads/2019/05/google-kiev-ua.jpg">
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="carousel-item ">
+		<div class="row">
+			<div class="col-md-3">
+				<a href="#">
+					<img class="w-100" src="https://my-master.net.ua/wp-content/uploads/2019/05/google-kiev-ua.jpg">
+				</a>
+			</div>
+
+			<div class="col-md-3">
+				<a href="#">
+					<img class="w-100" src="https://my-master.net.ua/wp-content/uploads/2019/05/google-kiev-ua.jpg">
+				</a>
+			</div>
+
+			<div class="col-md-3">
+				<a href="#">
+					<img class="w-100" src="https://my-master.net.ua/wp-content/uploads/2019/05/google-kiev-ua.jpg">
+				</a>
+			</div>
+
+			<div class="col-md-3">
+				<a href="#">
+					<img class="w-100" src="https://my-master.net.ua/wp-content/uploads/2019/05/google-kiev-ua.jpg">
+				</a>
+			</div>
+		</div>
+	</div>
+	</div>
+
+
+	<button class="carousel-control-prev " type="button" data-bs-target="#blogCarousel" data-bs-slide="prev">
+		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	</button>
+
+
+	<button class="carousel-control-next " type="button" data-bs-target="#blogCarousel" data-bs-slide="next">
+		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+	</button>
+
+</div>
+-->
+
+
+	<section class="otz">
+		<div class="container">
+			<div class="section-title text-center">
+				<h2>Отзывы</h2>
+
+			</div>
+			<div class="row">
+				<div class="col-12 col-lg-4 rait">
+					<a href=".ne-5" data-bs-toggle="collapse"
+						aria-controls="multyCollapse1 multyCollapse2 multyCollapse3 multyCollapse4" role="button"
+						aria-expanded="false">
+						<span class="vnutr ">2 Отзыва</span>
+						<div class="rait-line  rait-line-5 ">
+							<span>5</span>
+							<svg class="ow-counts__star" width="16px" height="15px" viewBox="0 0 22 21" fill="#fff"
+								version="1.1" xmlns="http://www.w3.org/2000/svg">
+								<g stroke="none" stroke-width="1" fill-rule="evenodd">
+									<path
+										d="M11,17.1483333 L16.1810004,20.2753773 C16.6538365,20.5607621 17.268496,20.4088029 17.5538808,19.9359669 C17.6885693,19.7128101 17.7308035,19.4458833 17.6715868,19.1920461 L16.2966667,13.2983333 L20.8752723,9.3318856 C21.2927035,8.9702648 21.3379468,8.3387183 20.9763259,7.9212871 C20.8056446,7.7242638 20.5647759,7.6016755 20.3050362,7.5796391 L14.2783333,7.0683333 L11.9207179,1.50570331 C11.7052005,0.99720486 11.1182696,0.75969683 10.6097711,0.97521427 C10.3707977,1.07649865 10.1805665,1.26672985 10.0792821,1.50570331 L7.7216667,7.0683333 L1.69496379,7.5796391 C1.144656,7.6263273 0.73639162,8.1102881 0.78307976,8.6605959 C0.80511609,8.9203356 0.92770441,9.1612042 1.12472773,9.3318856 L5.70333333,13.2983333 L4.32841315,19.1920461 C4.20294189,19.7298893 4.53723546,20.267612 5.07507876,20.3930833 C5.32891596,20.4523 5.5958428,20.4100658 5.81899958,20.2753773 L11,17.1483333 Z">
+
+									</path>
+								</g>
+							</svg>
+
+						</div>
+					</a>
+					<a href=".ne-4" data-bs-toggle="collapse"
+						aria-controls="multyCollapse1 multyCollapse2 multyCollapse3 multyCollapse5" role="button"
+						aria-expanded="false">
+						<span class="vnutr">1 Отзыв</span>
+						<div class="rait-line  rait-line-4 ">
+							<span>4</span>
+							<svg class="ow-counts__star" width="16px" height="15px" viewBox="0 0 22 21" fill="#fff"
+								version="1.1" xmlns="http://www.w3.org/2000/svg">
+								<g stroke="none" stroke-width="1" fill-rule="evenodd">
+									<path
+										d="M11,17.1483333 L16.1810004,20.2753773 C16.6538365,20.5607621 17.268496,20.4088029 17.5538808,19.9359669 C17.6885693,19.7128101 17.7308035,19.4458833 17.6715868,19.1920461 L16.2966667,13.2983333 L20.8752723,9.3318856 C21.2927035,8.9702648 21.3379468,8.3387183 20.9763259,7.9212871 C20.8056446,7.7242638 20.5647759,7.6016755 20.3050362,7.5796391 L14.2783333,7.0683333 L11.9207179,1.50570331 C11.7052005,0.99720486 11.1182696,0.75969683 10.6097711,0.97521427 C10.3707977,1.07649865 10.1805665,1.26672985 10.0792821,1.50570331 L7.7216667,7.0683333 L1.69496379,7.5796391 C1.144656,7.6263273 0.73639162,8.1102881 0.78307976,8.6605959 C0.80511609,8.9203356 0.92770441,9.1612042 1.12472773,9.3318856 L5.70333333,13.2983333 L4.32841315,19.1920461 C4.20294189,19.7298893 4.53723546,20.267612 5.07507876,20.3930833 C5.32891596,20.4523 5.5958428,20.4100658 5.81899958,20.2753773 L11,17.1483333 Z">
+
+									</path>
+								</g>
+							</svg>
+
+						</div>
+					</a>
+					<a href=".ne-3" data-bs-toggle="collapse"
+						aria-controls="multyCollapse1 multyCollapse2 multyCollapse4 multyCollapse5" role="button"
+						aria-expanded="false">
+						<span class="vnutr">1 Отзыв</span>
+						<div class="rait-line  rait-line-3 ">
+							<span>3</span>
+							<svg class="ow-counts__star" width="16px" height="15px" viewBox="0 0 22 21" fill="#fff"
+								version="1.1" xmlns="http://www.w3.org/2000/svg">
+								<g stroke="none" stroke-width="1" fill-rule="evenodd">
+									<path
+										d="M11,17.1483333 L16.1810004,20.2753773 C16.6538365,20.5607621 17.268496,20.4088029 17.5538808,19.9359669 C17.6885693,19.7128101 17.7308035,19.4458833 17.6715868,19.1920461 L16.2966667,13.2983333 L20.8752723,9.3318856 C21.2927035,8.9702648 21.3379468,8.3387183 20.9763259,7.9212871 C20.8056446,7.7242638 20.5647759,7.6016755 20.3050362,7.5796391 L14.2783333,7.0683333 L11.9207179,1.50570331 C11.7052005,0.99720486 11.1182696,0.75969683 10.6097711,0.97521427 C10.3707977,1.07649865 10.1805665,1.26672985 10.0792821,1.50570331 L7.7216667,7.0683333 L1.69496379,7.5796391 C1.144656,7.6263273 0.73639162,8.1102881 0.78307976,8.6605959 C0.80511609,8.9203356 0.92770441,9.1612042 1.12472773,9.3318856 L5.70333333,13.2983333 L4.32841315,19.1920461 C4.20294189,19.7298893 4.53723546,20.267612 5.07507876,20.3930833 C5.32891596,20.4523 5.5958428,20.4100658 5.81899958,20.2753773 L11,17.1483333 Z">
+
+									</path>
+								</g>
+							</svg>
+
+						</div>
+					</a>
+
+					<a href=".ne-2" data-bs-toggle="collapse"
+						aria-controls="multyCollapse1 multyCollapse3 multyCollapse4 multyCollapse5" role="button"
+						aria-expanded="false">
+						<span class="vnutr">0 Отзывов</span>
+						<div class="rait-line  rait-line-2 ">
+							<span>2</span>
+							<svg class="ow-counts__star" width="16px" height="15px" viewBox="0 0 22 21" fill="#fff"
+								version="1.1" xmlns="http://www.w3.org/2000/svg">
+								<g stroke="none" stroke-width="1" fill-rule="evenodd">
+									<path
+										d="M11,17.1483333 L16.1810004,20.2753773 C16.6538365,20.5607621 17.268496,20.4088029 17.5538808,19.9359669 C17.6885693,19.7128101 17.7308035,19.4458833 17.6715868,19.1920461 L16.2966667,13.2983333 L20.8752723,9.3318856 C21.2927035,8.9702648 21.3379468,8.3387183 20.9763259,7.9212871 C20.8056446,7.7242638 20.5647759,7.6016755 20.3050362,7.5796391 L14.2783333,7.0683333 L11.9207179,1.50570331 C11.7052005,0.99720486 11.1182696,0.75969683 10.6097711,0.97521427 C10.3707977,1.07649865 10.1805665,1.26672985 10.0792821,1.50570331 L7.7216667,7.0683333 L1.69496379,7.5796391 C1.144656,7.6263273 0.73639162,8.1102881 0.78307976,8.6605959 C0.80511609,8.9203356 0.92770441,9.1612042 1.12472773,9.3318856 L5.70333333,13.2983333 L4.32841315,19.1920461 C4.20294189,19.7298893 4.53723546,20.267612 5.07507876,20.3930833 C5.32891596,20.4523 5.5958428,20.4100658 5.81899958,20.2753773 L11,17.1483333 Z">
+
+									</path>
+								</g>
+							</svg>
+
+						</div>
+					</a>
+					<a href=".ne-1" data-bs-toggle="collapse"
+						aria-controls="multyCollapse2 multyCollapse3 multyCollapse4 multyCollapse5" role="button"
+						aria-expanded="false">
+						<span class="vnutr">0 Отзывов</span>
+						<div class="rait-line  rait-line-1 ">
+							<span>1</span>
+							<svg class="ow-counts__star" width="16px" height="15px" viewBox="0 0 22 21" fill="#fff"
+								version="1.1" xmlns="http://www.w3.org/2000/svg">
+								<g stroke="none" stroke-width="1" fill-rule="evenodd">
+									<path
+										d="M11,17.1483333 L16.1810004,20.2753773 C16.6538365,20.5607621 17.268496,20.4088029 17.5538808,19.9359669 C17.6885693,19.7128101 17.7308035,19.4458833 17.6715868,19.1920461 L16.2966667,13.2983333 L20.8752723,9.3318856 C21.2927035,8.9702648 21.3379468,8.3387183 20.9763259,7.9212871 C20.8056446,7.7242638 20.5647759,7.6016755 20.3050362,7.5796391 L14.2783333,7.0683333 L11.9207179,1.50570331 C11.7052005,0.99720486 11.1182696,0.75969683 10.6097711,0.97521427 C10.3707977,1.07649865 10.1805665,1.26672985 10.0792821,1.50570331 L7.7216667,7.0683333 L1.69496379,7.5796391 C1.144656,7.6263273 0.73639162,8.1102881 0.78307976,8.6605959 C0.80511609,8.9203356 0.92770441,9.1612042 1.12472773,9.3318856 L5.70333333,13.2983333 L4.32841315,19.1920461 C4.20294189,19.7298893 4.53723546,20.267612 5.07507876,20.3930833 C5.32891596,20.4523 5.5958428,20.4100658 5.81899958,20.2753773 L11,17.1483333 Z">
+
+									</path>
+								</g>
+							</svg>
+
+						</div>
+					</a>
+				</div>
+
+				<div class="col-12 col-lg-8 feed-block">
+					<div class="feed mt-5 collapse ne-4 ne-3 ne-2 ne-1 show" id="multyCollapse5">
+						<div class="feed-head">
+							<div class="row">
+								<div class="hum">
+									<div class="hum-desk">
+										<svg class="Opinion__avatar Icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M5.25391 7C5.25391 4.37665 7.38055 2.25 10.0039 2.25C12.6273 2.25 14.7539 4.37665 14.7539 7C14.7539 9.62335 12.6273 11.75 10.0039 11.75C7.38055 11.75 5.25391 9.62335 5.25391 7ZM10.0039 3.75C8.20898 3.75 6.75391 5.20507 6.75391 7C6.75391 8.79493 8.20898 10.25 10.0039 10.25C11.7988 10.25 13.2539 8.79493 13.2539 7C13.2539 5.20507 11.7988 3.75 10.0039 3.75Z">
+											</path>
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M1.43619 16.5024C3.1879 14.5055 6.41729 13.25 9.999 13.25C13.5822 13.25 16.8129 14.5066 18.5641 16.505C18.8371 16.8165 18.8058 17.2903 18.4943 17.5633C18.1828 17.8363 17.7089 17.8051 17.4359 17.4936C16.0507 15.9127 13.2906 14.75 9.999 14.75C6.70886 14.75 3.94968 15.9117 2.56381 17.4916L1.43619 16.5024Z">
+											</path>
+										</svg>
+										<span>Михалыч</span>
+									</div>
+									<div class="ocen">
+										<div class="star text-center">
+											<div class="star-rating">
+												<div class="star-rating__stars">
+
+													<div class="star-rating__star" data-state="selected">
+														<svg width="22px" height="21px" viewBox="0 0 22 21" version="1.1"
+															xmlns="http://www.w3.org/2000/svg">
+															<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																<path
+																	d="M11,17.1483333 L16.1810004,20.2753773 C16.6538365,20.5607621 17.268496,20.4088029 17.5538808,19.9359669 C17.6885693,19.7128101 17.7308035,19.4458833 17.6715868,19.1920461 L16.2966667,13.2983333 L20.8752723,9.3318856 C21.2927035,8.9702648 21.3379468,8.3387183 20.9763259,7.9212871 C20.8056446,7.7242638 20.5647759,7.6016755 20.3050362,7.5796391 L14.2783333,7.0683333 L11.9207179,1.50570331 C11.7052005,0.99720486 11.1182696,0.75969683 10.6097711,0.97521427 C10.3707977,1.07649865 10.1805665,1.26672985 10.0792821,1.50570331 L7.7216667,7.0683333 L1.69496379,7.5796391 C1.144656,7.6263273 0.73639162,8.1102881 0.78307976,8.6605959 C0.80511609,8.9203356 0.92770441,9.1612042 1.12472773,9.3318856 L5.70333333,13.2983333 L4.32841315,19.1920461 C4.20294189,19.7298893 4.53723546,20.267612 5.07507876,20.3930833 C5.32891596,20.4523 5.5958428,20.4100658 5.81899958,20.2753773 L11,17.1483333 Z"
+																	fill="#000000"></path>
+															</g>
+														</svg>
+													</div>
+
+													<div class="star-rating__star" data-state="selected">
+														<svg width="22px" height="21px" viewBox="0 0 22 21" version="1.1"
+															xmlns="http://www.w3.org/2000/svg">
+															<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																<path
+																	d="M11,17.1483333 L16.1810004,20.2753773 C16.6538365,20.5607621 17.268496,20.4088029 17.5538808,19.9359669 C17.6885693,19.7128101 17.7308035,19.4458833 17.6715868,19.1920461 L16.2966667,13.2983333 L20.8752723,9.3318856 C21.2927035,8.9702648 21.3379468,8.3387183 20.9763259,7.9212871 C20.8056446,7.7242638 20.5647759,7.6016755 20.3050362,7.5796391 L14.2783333,7.0683333 L11.9207179,1.50570331 C11.7052005,0.99720486 11.1182696,0.75969683 10.6097711,0.97521427 C10.3707977,1.07649865 10.1805665,1.26672985 10.0792821,1.50570331 L7.7216667,7.0683333 L1.69496379,7.5796391 C1.144656,7.6263273 0.73639162,8.1102881 0.78307976,8.6605959 C0.80511609,8.9203356 0.92770441,9.1612042 1.12472773,9.3318856 L5.70333333,13.2983333 L4.32841315,19.1920461 C4.20294189,19.7298893 4.53723546,20.267612 5.07507876,20.3930833 C5.32891596,20.4523 5.5958428,20.4100658 5.81899958,20.2753773 L11,17.1483333 Z"
+																	fill="#000000"></path>
+															</g>
+														</svg>
+													</div>
+
+													<div class="star-rating__star" data-state="selected">
+														<svg width="22px" height="21px" viewBox="0 0 22 21" version="1.1"
+															xmlns="http://www.w3.org/2000/svg">
+															<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																<path
+																	d="M11,17.1483333 L16.1810004,20.2753773 C16.6538365,20.5607621 17.268496,20.4088029 17.5538808,19.9359669 C17.6885693,19.7128101 17.7308035,19.4458833 17.6715868,19.1920461 L16.2966667,13.2983333 L20.8752723,9.3318856 C21.2927035,8.9702648 21.3379468,8.3387183 20.9763259,7.9212871 C20.8056446,7.7242638 20.5647759,7.6016755 20.3050362,7.5796391 L14.2783333,7.0683333 L11.9207179,1.50570331 C11.7052005,0.99720486 11.1182696,0.75969683 10.6097711,0.97521427 C10.3707977,1.07649865 10.1805665,1.26672985 10.0792821,1.50570331 L7.7216667,7.0683333 L1.69496379,7.5796391 C1.144656,7.6263273 0.73639162,8.1102881 0.78307976,8.6605959 C0.80511609,8.9203356 0.92770441,9.1612042 1.12472773,9.3318856 L5.70333333,13.2983333 L4.32841315,19.1920461 C4.20294189,19.7298893 4.53723546,20.267612 5.07507876,20.3930833 C5.32891596,20.4523 5.5958428,20.4100658 5.81899958,20.2753773 L11,17.1483333 Z"
+																	fill="#000000"></path>
+															</g>
+														</svg>
+													</div>
+
+													<div class="star-rating__star" data-state="selected">
+														<svg width="22px" height="21px" viewBox="0 0 22 21" version="1.1"
+															xmlns="http://www.w3.org/2000/svg">
+															<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																<path
+																	d="M11,17.1483333 L16.1810004,20.2753773 C16.6538365,20.5607621 17.268496,20.4088029 17.5538808,19.9359669 C17.6885693,19.7128101 17.7308035,19.4458833 17.6715868,19.1920461 L16.2966667,13.2983333 L20.8752723,9.3318856 C21.2927035,8.9702648 21.3379468,8.3387183 20.9763259,7.9212871 C20.8056446,7.7242638 20.5647759,7.6016755 20.3050362,7.5796391 L14.2783333,7.0683333 L11.9207179,1.50570331 C11.7052005,0.99720486 11.1182696,0.75969683 10.6097711,0.97521427 C10.3707977,1.07649865 10.1805665,1.26672985 10.0792821,1.50570331 L7.7216667,7.0683333 L1.69496379,7.5796391 C1.144656,7.6263273 0.73639162,8.1102881 0.78307976,8.6605959 C0.80511609,8.9203356 0.92770441,9.1612042 1.12472773,9.3318856 L5.70333333,13.2983333 L4.32841315,19.1920461 C4.20294189,19.7298893 4.53723546,20.267612 5.07507876,20.3930833 C5.32891596,20.4523 5.5958428,20.4100658 5.81899958,20.2753773 L11,17.1483333 Z"
+																	fill="#000000"></path>
+															</g>
+														</svg>
+													</div>
+
+													<div class="star-rating__star" data-state="selected">
+														<svg width="22px" height="21px" viewBox="0 0 22 21" version="1.1"
+															xmlns="http://www.w3.org/2000/svg">
+															<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																<path
+																	d="M11,17.1483333 L16.1810004,20.2753773 C16.6538365,20.5607621 17.268496,20.4088029 17.5538808,19.9359669 C17.6885693,19.7128101 17.7308035,19.4458833 17.6715868,19.1920461 L16.2966667,13.2983333 L20.8752723,9.3318856 C21.2927035,8.9702648 21.3379468,8.3387183 20.9763259,7.9212871 C20.8056446,7.7242638 20.5647759,7.6016755 20.3050362,7.5796391 L14.2783333,7.0683333 L11.9207179,1.50570331 C11.7052005,0.99720486 11.1182696,0.75969683 10.6097711,0.97521427 C10.3707977,1.07649865 10.1805665,1.26672985 10.0792821,1.50570331 L7.7216667,7.0683333 L1.69496379,7.5796391 C1.144656,7.6263273 0.73639162,8.1102881 0.78307976,8.6605959 C0.80511609,8.9203356 0.92770441,9.1612042 1.12472773,9.3318856 L5.70333333,13.2983333 L4.32841315,19.1920461 C4.20294189,19.7298893 4.53723546,20.267612 5.07507876,20.3930833 C5.32891596,20.4523 5.5958428,20.4100658 5.81899958,20.2753773 L11,17.1483333 Z"
+																	fill="#000000"></path>
+															</g>
+														</svg>
+													</div>
+
+												</div>
+											</div>
+											<p>26.07.2021</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="comment">
+									<div class="comment-head">
+										<h4>Комментарий</h4>
+										<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati deleniti
+											consequuntur aliquid debitis quo praesentium ipsa, reiciendis, vitae. Veniam possimus,
+											in voluptas, quis excepturi facilis tenetur, harum natus reprehenderit fugiat,
+											inventore sit accusantium dolorum minima. Iste facere, id eaque expedita libero,
+											reprehenderit voluptatem perferendis adipisci dolores. Earum autem facilis,
+											consectetur?</p>
+									</div>
+								</div>
+
+
+
+								<div class="accordion" id="accordionExample">
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="headingOne">
+											<button class="accordion-button" type="button" data-bs-toggle="collapse"
+												data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+												Комментировать
+											</button>
+										</h2>
+										<div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+											data-bs-parent="#accordionExample">
+											<div class="accordion-body">
+												<textarea class="w-100 form-control" rows="5"
+													placeholder="Написать комментарий..."></textarea>
+												<button type="button" class="btn comment-btn mt-4">Отправить</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+
+
+							</div>
+						</div>
+
+					</div>
+
+
+					<div class="feed  collapse ne-4 ne-3 ne-2 ne-1 show" id="multyCollapse5">
+						<div class="feed-head">
+							<div class="row">
+								<div class="hum">
+									<div class="hum-desk">
+										<svg class="Opinion__avatar Icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M5.25391 7C5.25391 4.37665 7.38055 2.25 10.0039 2.25C12.6273 2.25 14.7539 4.37665 14.7539 7C14.7539 9.62335 12.6273 11.75 10.0039 11.75C7.38055 11.75 5.25391 9.62335 5.25391 7ZM10.0039 3.75C8.20898 3.75 6.75391 5.20507 6.75391 7C6.75391 8.79493 8.20898 10.25 10.0039 10.25C11.7988 10.25 13.2539 8.79493 13.2539 7C13.2539 5.20507 11.7988 3.75 10.0039 3.75Z">
+											</path>
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M1.43619 16.5024C3.1879 14.5055 6.41729 13.25 9.999 13.25C13.5822 13.25 16.8129 14.5066 18.5641 16.505C18.8371 16.8165 18.8058 17.2903 18.4943 17.5633C18.1828 17.8363 17.7089 17.8051 17.4359 17.4936C16.0507 15.9127 13.2906 14.75 9.999 14.75C6.70886 14.75 3.94968 15.9117 2.56381 17.4916L1.43619 16.5024Z">
+											</path>
+										</svg>
+										<span>Федорович</span>
+									</div>
+									<div class="ocen">
+										<div class="star text-center">
+											<div class="star-rating">
+												<div class="star-rating__stars">
+
+													<div class="star-rating__star" data-state="selected">
+														<svg width="22px" height="21px" viewBox="0 0 22 21" version="1.1"
+															xmlns="http://www.w3.org/2000/svg">
+															<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																<path
+																	d="M11,17.1483333 L16.1810004,20.2753773 C16.6538365,20.5607621 17.268496,20.4088029 17.5538808,19.9359669 C17.6885693,19.7128101 17.7308035,19.4458833 17.6715868,19.1920461 L16.2966667,13.2983333 L20.8752723,9.3318856 C21.2927035,8.9702648 21.3379468,8.3387183 20.9763259,7.9212871 C20.8056446,7.7242638 20.5647759,7.6016755 20.3050362,7.5796391 L14.2783333,7.0683333 L11.9207179,1.50570331 C11.7052005,0.99720486 11.1182696,0.75969683 10.6097711,0.97521427 C10.3707977,1.07649865 10.1805665,1.26672985 10.0792821,1.50570331 L7.7216667,7.0683333 L1.69496379,7.5796391 C1.144656,7.6263273 0.73639162,8.1102881 0.78307976,8.6605959 C0.80511609,8.9203356 0.92770441,9.1612042 1.12472773,9.3318856 L5.70333333,13.2983333 L4.32841315,19.1920461 C4.20294189,19.7298893 4.53723546,20.267612 5.07507876,20.3930833 C5.32891596,20.4523 5.5958428,20.4100658 5.81899958,20.2753773 L11,17.1483333 Z"
+																	fill="#000000"></path>
+															</g>
+														</svg>
+													</div>
+
+													<div class="star-rating__star" data-state="selected">
+														<svg width="22px" height="21px" viewBox="0 0 22 21" version="1.1"
+															xmlns="http://www.w3.org/2000/svg">
+															<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																<path
+																	d="M11,17.1483333 L16.1810004,20.2753773 C16.6538365,20.5607621 17.268496,20.4088029 17.5538808,19.9359669 C17.6885693,19.7128101 17.7308035,19.4458833 17.6715868,19.1920461 L16.2966667,13.2983333 L20.8752723,9.3318856 C21.2927035,8.9702648 21.3379468,8.3387183 20.9763259,7.9212871 C20.8056446,7.7242638 20.5647759,7.6016755 20.3050362,7.5796391 L14.2783333,7.0683333 L11.9207179,1.50570331 C11.7052005,0.99720486 11.1182696,0.75969683 10.6097711,0.97521427 C10.3707977,1.07649865 10.1805665,1.26672985 10.0792821,1.50570331 L7.7216667,7.0683333 L1.69496379,7.5796391 C1.144656,7.6263273 0.73639162,8.1102881 0.78307976,8.6605959 C0.80511609,8.9203356 0.92770441,9.1612042 1.12472773,9.3318856 L5.70333333,13.2983333 L4.32841315,19.1920461 C4.20294189,19.7298893 4.53723546,20.267612 5.07507876,20.3930833 C5.32891596,20.4523 5.5958428,20.4100658 5.81899958,20.2753773 L11,17.1483333 Z"
+																	fill="#000000"></path>
+															</g>
+														</svg>
+													</div>
+
+													<div class="star-rating__star" data-state="selected">
+														<svg width="22px" height="21px" viewBox="0 0 22 21" version="1.1"
+															xmlns="http://www.w3.org/2000/svg">
+															<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																<path
+																	d="M11,17.1483333 L16.1810004,20.2753773 C16.6538365,20.5607621 17.268496,20.4088029 17.5538808,19.9359669 C17.6885693,19.7128101 17.7308035,19.4458833 17.6715868,19.1920461 L16.2966667,13.2983333 L20.8752723,9.3318856 C21.2927035,8.9702648 21.3379468,8.3387183 20.9763259,7.9212871 C20.8056446,7.7242638 20.5647759,7.6016755 20.3050362,7.5796391 L14.2783333,7.0683333 L11.9207179,1.50570331 C11.7052005,0.99720486 11.1182696,0.75969683 10.6097711,0.97521427 C10.3707977,1.07649865 10.1805665,1.26672985 10.0792821,1.50570331 L7.7216667,7.0683333 L1.69496379,7.5796391 C1.144656,7.6263273 0.73639162,8.1102881 0.78307976,8.6605959 C0.80511609,8.9203356 0.92770441,9.1612042 1.12472773,9.3318856 L5.70333333,13.2983333 L4.32841315,19.1920461 C4.20294189,19.7298893 4.53723546,20.267612 5.07507876,20.3930833 C5.32891596,20.4523 5.5958428,20.4100658 5.81899958,20.2753773 L11,17.1483333 Z"
+																	fill="#000000"></path>
+															</g>
+														</svg>
+													</div>
+
+													<div class="star-rating__star" data-state="selected">
+														<svg width="22px" height="21px" viewBox="0 0 22 21" version="1.1"
+															xmlns="http://www.w3.org/2000/svg">
+															<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																<path
+																	d="M11,17.1483333 L16.1810004,20.2753773 C16.6538365,20.5607621 17.268496,20.4088029 17.5538808,19.9359669 C17.6885693,19.7128101 17.7308035,19.4458833 17.6715868,19.1920461 L16.2966667,13.2983333 L20.8752723,9.3318856 C21.2927035,8.9702648 21.3379468,8.3387183 20.9763259,7.9212871 C20.8056446,7.7242638 20.5647759,7.6016755 20.3050362,7.5796391 L14.2783333,7.0683333 L11.9207179,1.50570331 C11.7052005,0.99720486 11.1182696,0.75969683 10.6097711,0.97521427 C10.3707977,1.07649865 10.1805665,1.26672985 10.0792821,1.50570331 L7.7216667,7.0683333 L1.69496379,7.5796391 C1.144656,7.6263273 0.73639162,8.1102881 0.78307976,8.6605959 C0.80511609,8.9203356 0.92770441,9.1612042 1.12472773,9.3318856 L5.70333333,13.2983333 L4.32841315,19.1920461 C4.20294189,19.7298893 4.53723546,20.267612 5.07507876,20.3930833 C5.32891596,20.4523 5.5958428,20.4100658 5.81899958,20.2753773 L11,17.1483333 Z"
+																	fill="#000000"></path>
+															</g>
+														</svg>
+													</div>
+
+													<div class="star-rating__star" data-state="selected">
+														<svg width="22px" height="21px" viewBox="0 0 22 21" version="1.1"
+															xmlns="http://www.w3.org/2000/svg">
+															<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																<path
+																	d="M11,17.1483333 L16.1810004,20.2753773 C16.6538365,20.5607621 17.268496,20.4088029 17.5538808,19.9359669 C17.6885693,19.7128101 17.7308035,19.4458833 17.6715868,19.1920461 L16.2966667,13.2983333 L20.8752723,9.3318856 C21.2927035,8.9702648 21.3379468,8.3387183 20.9763259,7.9212871 C20.8056446,7.7242638 20.5647759,7.6016755 20.3050362,7.5796391 L14.2783333,7.0683333 L11.9207179,1.50570331 C11.7052005,0.99720486 11.1182696,0.75969683 10.6097711,0.97521427 C10.3707977,1.07649865 10.1805665,1.26672985 10.0792821,1.50570331 L7.7216667,7.0683333 L1.69496379,7.5796391 C1.144656,7.6263273 0.73639162,8.1102881 0.78307976,8.6605959 C0.80511609,8.9203356 0.92770441,9.1612042 1.12472773,9.3318856 L5.70333333,13.2983333 L4.32841315,19.1920461 C4.20294189,19.7298893 4.53723546,20.267612 5.07507876,20.3930833 C5.32891596,20.4523 5.5958428,20.4100658 5.81899958,20.2753773 L11,17.1483333 Z"
+																	fill="#000000"></path>
+															</g>
+														</svg>
+													</div>
+
+												</div>
+											</div>
+											<p>16.03.2021</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="comment">
+									<div class="comment-head">
+										<h4>Комментарий</h4>
+										<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati deleniti
+											consequuntur aliquid debitis quo praesentium ipsa, reiciendis, vitae. Veniam possimus,
+											in voluptas, quis excepturi facilis tenetur, harum natus reprehenderit fugiat,
+											inventore sit accusantium dolorum minima. Iste facere, id eaque expedita libero,
+											reprehenderit voluptatem perferendis adipisci dolores. Earum autem facilis,
+											consectetur?</p>
+									</div>
+								</div>
+
+
+
+								<div class="accordion" id="accordionExample">
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="headingOne">
+											<button class="accordion-button" type="button" data-bs-toggle="collapse"
+												data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+												Комментировать
+											</button>
+										</h2>
+										<div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+											data-bs-parent="#accordionExample">
+											<div class="accordion-body">
+												<textarea class="w-100 form-control" rows="5"
+													placeholder="Написать комментарий..."></textarea>
+												<button type="button" class="btn comment-btn mt-4">Отправить</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+
+
+							</div>
+						</div>
+
+					</div>
+
+
+
+
+					<div class="feed  collapse ne-5 ne-3 ne-2 ne-1 show" id="multyCollapse4">
+						<div class="feed-head">
+							<div class="row">
+								<div class="hum">
+									<div class="hum-desk">
+										<svg class="Opinion__avatar Icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M5.25391 7C5.25391 4.37665 7.38055 2.25 10.0039 2.25C12.6273 2.25 14.7539 4.37665 14.7539 7C14.7539 9.62335 12.6273 11.75 10.0039 11.75C7.38055 11.75 5.25391 9.62335 5.25391 7ZM10.0039 3.75C8.20898 3.75 6.75391 5.20507 6.75391 7C6.75391 8.79493 8.20898 10.25 10.0039 10.25C11.7988 10.25 13.2539 8.79493 13.2539 7C13.2539 5.20507 11.7988 3.75 10.0039 3.75Z">
+											</path>
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M1.43619 16.5024C3.1879 14.5055 6.41729 13.25 9.999 13.25C13.5822 13.25 16.8129 14.5066 18.5641 16.505C18.8371 16.8165 18.8058 17.2903 18.4943 17.5633C18.1828 17.8363 17.7089 17.8051 17.4359 17.4936C16.0507 15.9127 13.2906 14.75 9.999 14.75C6.70886 14.75 3.94968 15.9117 2.56381 17.4916L1.43619 16.5024Z">
+											</path>
+										</svg>
+										<span>Иваныч</span>
+									</div>
+									<div class="ocen">
+										<div class="star text-center">
+											<div class="star-rating">
+												<div class="star-rating__stars">
+
+													<div class="star-rating__star" data-state="selected">
+														<svg width="22px" height="21px" viewBox="0 0 22 21" version="1.1"
+															xmlns="http://www.w3.org/2000/svg">
+															<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																<path
+																	d="M11,17.1483333 L16.1810004,20.2753773 C16.6538365,20.5607621 17.268496,20.4088029 17.5538808,19.9359669 C17.6885693,19.7128101 17.7308035,19.4458833 17.6715868,19.1920461 L16.2966667,13.2983333 L20.8752723,9.3318856 C21.2927035,8.9702648 21.3379468,8.3387183 20.9763259,7.9212871 C20.8056446,7.7242638 20.5647759,7.6016755 20.3050362,7.5796391 L14.2783333,7.0683333 L11.9207179,1.50570331 C11.7052005,0.99720486 11.1182696,0.75969683 10.6097711,0.97521427 C10.3707977,1.07649865 10.1805665,1.26672985 10.0792821,1.50570331 L7.7216667,7.0683333 L1.69496379,7.5796391 C1.144656,7.6263273 0.73639162,8.1102881 0.78307976,8.6605959 C0.80511609,8.9203356 0.92770441,9.1612042 1.12472773,9.3318856 L5.70333333,13.2983333 L4.32841315,19.1920461 C4.20294189,19.7298893 4.53723546,20.267612 5.07507876,20.3930833 C5.32891596,20.4523 5.5958428,20.4100658 5.81899958,20.2753773 L11,17.1483333 Z"
+																	fill="#000000"></path>
+															</g>
+														</svg>
+													</div>
+
+													<div class="star-rating__star" data-state="selected">
+														<svg width="22px" height="21px" viewBox="0 0 22 21" version="1.1"
+															xmlns="http://www.w3.org/2000/svg">
+															<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																<path
+																	d="M11,17.1483333 L16.1810004,20.2753773 C16.6538365,20.5607621 17.268496,20.4088029 17.5538808,19.9359669 C17.6885693,19.7128101 17.7308035,19.4458833 17.6715868,19.1920461 L16.2966667,13.2983333 L20.8752723,9.3318856 C21.2927035,8.9702648 21.3379468,8.3387183 20.9763259,7.9212871 C20.8056446,7.7242638 20.5647759,7.6016755 20.3050362,7.5796391 L14.2783333,7.0683333 L11.9207179,1.50570331 C11.7052005,0.99720486 11.1182696,0.75969683 10.6097711,0.97521427 C10.3707977,1.07649865 10.1805665,1.26672985 10.0792821,1.50570331 L7.7216667,7.0683333 L1.69496379,7.5796391 C1.144656,7.6263273 0.73639162,8.1102881 0.78307976,8.6605959 C0.80511609,8.9203356 0.92770441,9.1612042 1.12472773,9.3318856 L5.70333333,13.2983333 L4.32841315,19.1920461 C4.20294189,19.7298893 4.53723546,20.267612 5.07507876,20.3930833 C5.32891596,20.4523 5.5958428,20.4100658 5.81899958,20.2753773 L11,17.1483333 Z"
+																	fill="#000000"></path>
+															</g>
+														</svg>
+													</div>
+
+													<div class="star-rating__star" data-state="selected">
+														<svg width="22px" height="21px" viewBox="0 0 22 21" version="1.1"
+															xmlns="http://www.w3.org/2000/svg">
+															<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																<path
+																	d="M11,17.1483333 L16.1810004,20.2753773 C16.6538365,20.5607621 17.268496,20.4088029 17.5538808,19.9359669 C17.6885693,19.7128101 17.7308035,19.4458833 17.6715868,19.1920461 L16.2966667,13.2983333 L20.8752723,9.3318856 C21.2927035,8.9702648 21.3379468,8.3387183 20.9763259,7.9212871 C20.8056446,7.7242638 20.5647759,7.6016755 20.3050362,7.5796391 L14.2783333,7.0683333 L11.9207179,1.50570331 C11.7052005,0.99720486 11.1182696,0.75969683 10.6097711,0.97521427 C10.3707977,1.07649865 10.1805665,1.26672985 10.0792821,1.50570331 L7.7216667,7.0683333 L1.69496379,7.5796391 C1.144656,7.6263273 0.73639162,8.1102881 0.78307976,8.6605959 C0.80511609,8.9203356 0.92770441,9.1612042 1.12472773,9.3318856 L5.70333333,13.2983333 L4.32841315,19.1920461 C4.20294189,19.7298893 4.53723546,20.267612 5.07507876,20.3930833 C5.32891596,20.4523 5.5958428,20.4100658 5.81899958,20.2753773 L11,17.1483333 Z"
+																	fill="#000000"></path>
+															</g>
+														</svg>
+													</div>
+
+													<div class="star-rating__star" data-state="selected">
+														<svg width="22px" height="21px" viewBox="0 0 22 21" version="1.1"
+															xmlns="http://www.w3.org/2000/svg">
+															<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																<path
+																	d="M11,17.1483333 L16.1810004,20.2753773 C16.6538365,20.5607621 17.268496,20.4088029 17.5538808,19.9359669 C17.6885693,19.7128101 17.7308035,19.4458833 17.6715868,19.1920461 L16.2966667,13.2983333 L20.8752723,9.3318856 C21.2927035,8.9702648 21.3379468,8.3387183 20.9763259,7.9212871 C20.8056446,7.7242638 20.5647759,7.6016755 20.3050362,7.5796391 L14.2783333,7.0683333 L11.9207179,1.50570331 C11.7052005,0.99720486 11.1182696,0.75969683 10.6097711,0.97521427 C10.3707977,1.07649865 10.1805665,1.26672985 10.0792821,1.50570331 L7.7216667,7.0683333 L1.69496379,7.5796391 C1.144656,7.6263273 0.73639162,8.1102881 0.78307976,8.6605959 C0.80511609,8.9203356 0.92770441,9.1612042 1.12472773,9.3318856 L5.70333333,13.2983333 L4.32841315,19.1920461 C4.20294189,19.7298893 4.53723546,20.267612 5.07507876,20.3930833 C5.32891596,20.4523 5.5958428,20.4100658 5.81899958,20.2753773 L11,17.1483333 Z"
+																	fill="#000000"></path>
+															</g>
+														</svg>
+													</div>
+
+													<div class="star-rating__star" data-state="">
+														<svg width="22px" height="21px" viewBox="0 0 22 21" version="1.1"
+															xmlns="http://www.w3.org/2000/svg">
+															<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																<path
+																	d="M11,17.1483333 L16.1810004,20.2753773 C16.6538365,20.5607621 17.268496,20.4088029 17.5538808,19.9359669 C17.6885693,19.7128101 17.7308035,19.4458833 17.6715868,19.1920461 L16.2966667,13.2983333 L20.8752723,9.3318856 C21.2927035,8.9702648 21.3379468,8.3387183 20.9763259,7.9212871 C20.8056446,7.7242638 20.5647759,7.6016755 20.3050362,7.5796391 L14.2783333,7.0683333 L11.9207179,1.50570331 C11.7052005,0.99720486 11.1182696,0.75969683 10.6097711,0.97521427 C10.3707977,1.07649865 10.1805665,1.26672985 10.0792821,1.50570331 L7.7216667,7.0683333 L1.69496379,7.5796391 C1.144656,7.6263273 0.73639162,8.1102881 0.78307976,8.6605959 C0.80511609,8.9203356 0.92770441,9.1612042 1.12472773,9.3318856 L5.70333333,13.2983333 L4.32841315,19.1920461 C4.20294189,19.7298893 4.53723546,20.267612 5.07507876,20.3930833 C5.32891596,20.4523 5.5958428,20.4100658 5.81899958,20.2753773 L11,17.1483333 Z"
+																	fill="#000000"></path>
+															</g>
+														</svg>
+													</div>
+
+												</div>
+											</div>
+											<p>23.01.2021</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="comment">
+									<div class="comment-head">
+										<h4>Комментарий</h4>
+										<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati deleniti
+											consequuntur aliquid debitis quo praesentium ipsa, reiciendis, vitae. Veniam possimus,
+											in voluptas, quis excepturi facilis tenetur, harum natus reprehenderit fugiat,
+											inventore sit accusantium dolorum minima. Iste facere, id eaque expedita libero,
+											reprehenderit voluptatem perferendis adipisci dolores. Earum autem facilis,
+											consectetur?</p>
+									</div>
+								</div>
+
+
+
+								<div class="accordion" id="accordionExample1">
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="headingOne">
+											<button class="accordion-button" type="button" data-bs-toggle="collapse"
+												data-bs-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
+												Комментировать
+											</button>
+										</h2>
+										<div id="collapseOne1" class="accordion-collapse collapse" aria-labelledby="headingOne"
+											data-bs-parent="#accordionExample1">
+											<div class="accordion-body">
+												<textarea class="w-100 form-control" rows="5" placeholder="Написать комментарий..."
+													required></textarea>
+												<button type="submit" class=" comment-btn mt-4">Отправить</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+
+
+							</div>
+						</div>
+
+					</div>
+
+
+					<div class="feed  collapse ne-5 ne-4 ne-2 ne-1 show" id="multyCollapse3">
+						<div class="feed-head">
+							<div class="row">
+								<div class="hum">
+									<div class="hum-desk">
+										<svg class="Opinion__avatar Icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M5.25391 7C5.25391 4.37665 7.38055 2.25 10.0039 2.25C12.6273 2.25 14.7539 4.37665 14.7539 7C14.7539 9.62335 12.6273 11.75 10.0039 11.75C7.38055 11.75 5.25391 9.62335 5.25391 7ZM10.0039 3.75C8.20898 3.75 6.75391 5.20507 6.75391 7C6.75391 8.79493 8.20898 10.25 10.0039 10.25C11.7988 10.25 13.2539 8.79493 13.2539 7C13.2539 5.20507 11.7988 3.75 10.0039 3.75Z">
+											</path>
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M1.43619 16.5024C3.1879 14.5055 6.41729 13.25 9.999 13.25C13.5822 13.25 16.8129 14.5066 18.5641 16.505C18.8371 16.8165 18.8058 17.2903 18.4943 17.5633C18.1828 17.8363 17.7089 17.8051 17.4359 17.4936C16.0507 15.9127 13.2906 14.75 9.999 14.75C6.70886 14.75 3.94968 15.9117 2.56381 17.4916L1.43619 16.5024Z">
+											</path>
+										</svg>
+										<span>Даниилыч</span>
+									</div>
+									<div class="ocen">
+										<div class="star text-center">
+											<div class="star-rating">
+												<div class="star-rating__stars">
+
+													<div class="star-rating__star" data-state="selected">
+														<svg width="22px" height="21px" viewBox="0 0 22 21" version="1.1"
+															xmlns="http://www.w3.org/2000/svg">
+															<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																<path
+																	d="M11,17.1483333 L16.1810004,20.2753773 C16.6538365,20.5607621 17.268496,20.4088029 17.5538808,19.9359669 C17.6885693,19.7128101 17.7308035,19.4458833 17.6715868,19.1920461 L16.2966667,13.2983333 L20.8752723,9.3318856 C21.2927035,8.9702648 21.3379468,8.3387183 20.9763259,7.9212871 C20.8056446,7.7242638 20.5647759,7.6016755 20.3050362,7.5796391 L14.2783333,7.0683333 L11.9207179,1.50570331 C11.7052005,0.99720486 11.1182696,0.75969683 10.6097711,0.97521427 C10.3707977,1.07649865 10.1805665,1.26672985 10.0792821,1.50570331 L7.7216667,7.0683333 L1.69496379,7.5796391 C1.144656,7.6263273 0.73639162,8.1102881 0.78307976,8.6605959 C0.80511609,8.9203356 0.92770441,9.1612042 1.12472773,9.3318856 L5.70333333,13.2983333 L4.32841315,19.1920461 C4.20294189,19.7298893 4.53723546,20.267612 5.07507876,20.3930833 C5.32891596,20.4523 5.5958428,20.4100658 5.81899958,20.2753773 L11,17.1483333 Z"
+																	fill="#000000"></path>
+															</g>
+														</svg>
+													</div>
+
+													<div class="star-rating__star" data-state="selected">
+														<svg width="22px" height="21px" viewBox="0 0 22 21" version="1.1"
+															xmlns="http://www.w3.org/2000/svg">
+															<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																<path
+																	d="M11,17.1483333 L16.1810004,20.2753773 C16.6538365,20.5607621 17.268496,20.4088029 17.5538808,19.9359669 C17.6885693,19.7128101 17.7308035,19.4458833 17.6715868,19.1920461 L16.2966667,13.2983333 L20.8752723,9.3318856 C21.2927035,8.9702648 21.3379468,8.3387183 20.9763259,7.9212871 C20.8056446,7.7242638 20.5647759,7.6016755 20.3050362,7.5796391 L14.2783333,7.0683333 L11.9207179,1.50570331 C11.7052005,0.99720486 11.1182696,0.75969683 10.6097711,0.97521427 C10.3707977,1.07649865 10.1805665,1.26672985 10.0792821,1.50570331 L7.7216667,7.0683333 L1.69496379,7.5796391 C1.144656,7.6263273 0.73639162,8.1102881 0.78307976,8.6605959 C0.80511609,8.9203356 0.92770441,9.1612042 1.12472773,9.3318856 L5.70333333,13.2983333 L4.32841315,19.1920461 C4.20294189,19.7298893 4.53723546,20.267612 5.07507876,20.3930833 C5.32891596,20.4523 5.5958428,20.4100658 5.81899958,20.2753773 L11,17.1483333 Z"
+																	fill="#000000"></path>
+															</g>
+														</svg>
+													</div>
+
+													<div class="star-rating__star" data-state="selected">
+														<svg width="22px" height="21px" viewBox="0 0 22 21" version="1.1"
+															xmlns="http://www.w3.org/2000/svg">
+															<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																<path
+																	d="M11,17.1483333 L16.1810004,20.2753773 C16.6538365,20.5607621 17.268496,20.4088029 17.5538808,19.9359669 C17.6885693,19.7128101 17.7308035,19.4458833 17.6715868,19.1920461 L16.2966667,13.2983333 L20.8752723,9.3318856 C21.2927035,8.9702648 21.3379468,8.3387183 20.9763259,7.9212871 C20.8056446,7.7242638 20.5647759,7.6016755 20.3050362,7.5796391 L14.2783333,7.0683333 L11.9207179,1.50570331 C11.7052005,0.99720486 11.1182696,0.75969683 10.6097711,0.97521427 C10.3707977,1.07649865 10.1805665,1.26672985 10.0792821,1.50570331 L7.7216667,7.0683333 L1.69496379,7.5796391 C1.144656,7.6263273 0.73639162,8.1102881 0.78307976,8.6605959 C0.80511609,8.9203356 0.92770441,9.1612042 1.12472773,9.3318856 L5.70333333,13.2983333 L4.32841315,19.1920461 C4.20294189,19.7298893 4.53723546,20.267612 5.07507876,20.3930833 C5.32891596,20.4523 5.5958428,20.4100658 5.81899958,20.2753773 L11,17.1483333 Z"
+																	fill="#000000"></path>
+															</g>
+														</svg>
+													</div>
+
+													<div class="star-rating__star" data-state="">
+														<svg width="22px" height="21px" viewBox="0 0 22 21" version="1.1"
+															xmlns="http://www.w3.org/2000/svg">
+															<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																<path
+																	d="M11,17.1483333 L16.1810004,20.2753773 C16.6538365,20.5607621 17.268496,20.4088029 17.5538808,19.9359669 C17.6885693,19.7128101 17.7308035,19.4458833 17.6715868,19.1920461 L16.2966667,13.2983333 L20.8752723,9.3318856 C21.2927035,8.9702648 21.3379468,8.3387183 20.9763259,7.9212871 C20.8056446,7.7242638 20.5647759,7.6016755 20.3050362,7.5796391 L14.2783333,7.0683333 L11.9207179,1.50570331 C11.7052005,0.99720486 11.1182696,0.75969683 10.6097711,0.97521427 C10.3707977,1.07649865 10.1805665,1.26672985 10.0792821,1.50570331 L7.7216667,7.0683333 L1.69496379,7.5796391 C1.144656,7.6263273 0.73639162,8.1102881 0.78307976,8.6605959 C0.80511609,8.9203356 0.92770441,9.1612042 1.12472773,9.3318856 L5.70333333,13.2983333 L4.32841315,19.1920461 C4.20294189,19.7298893 4.53723546,20.267612 5.07507876,20.3930833 C5.32891596,20.4523 5.5958428,20.4100658 5.81899958,20.2753773 L11,17.1483333 Z"
+																	fill="#000000"></path>
+															</g>
+														</svg>
+													</div>
+
+													<div class="star-rating__star" data-state="">
+														<svg width="22px" height="21px" viewBox="0 0 22 21" version="1.1"
+															xmlns="http://www.w3.org/2000/svg">
+															<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																<path
+																	d="M11,17.1483333 L16.1810004,20.2753773 C16.6538365,20.5607621 17.268496,20.4088029 17.5538808,19.9359669 C17.6885693,19.7128101 17.7308035,19.4458833 17.6715868,19.1920461 L16.2966667,13.2983333 L20.8752723,9.3318856 C21.2927035,8.9702648 21.3379468,8.3387183 20.9763259,7.9212871 C20.8056446,7.7242638 20.5647759,7.6016755 20.3050362,7.5796391 L14.2783333,7.0683333 L11.9207179,1.50570331 C11.7052005,0.99720486 11.1182696,0.75969683 10.6097711,0.97521427 C10.3707977,1.07649865 10.1805665,1.26672985 10.0792821,1.50570331 L7.7216667,7.0683333 L1.69496379,7.5796391 C1.144656,7.6263273 0.73639162,8.1102881 0.78307976,8.6605959 C0.80511609,8.9203356 0.92770441,9.1612042 1.12472773,9.3318856 L5.70333333,13.2983333 L4.32841315,19.1920461 C4.20294189,19.7298893 4.53723546,20.267612 5.07507876,20.3930833 C5.32891596,20.4523 5.5958428,20.4100658 5.81899958,20.2753773 L11,17.1483333 Z"
+																	fill="#000000"></path>
+															</g>
+														</svg>
+													</div>
+
+												</div>
+											</div>
+											<p>05.02.2021</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="comment">
+									<div class="comment-head">
+										<h4>Комментарий</h4>
+										<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati deleniti
+											consequuntur aliquid debitis quo praesentium ipsa, reiciendis, vitae. Veniam possimus,
+											in voluptas, quis excepturi facilis tenetur, harum natus reprehenderit fugiat,
+											inventore sit accusantium dolorum minima. Iste facere, id eaque expedita libero,
+											reprehenderit voluptatem perferendis adipisci dolores. Earum autem facilis,
+											consectetur?</p>
+									</div>
+								</div>
+
+
+
+								<div class="accordion" id="accordionExample1">
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="headingOne">
+											<button class="accordion-button" type="button" data-bs-toggle="collapse"
+												data-bs-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
+												Комментировать
+											</button>
+										</h2>
+										<div id="collapseOne1" class="accordion-collapse collapse" aria-labelledby="headingOne"
+											data-bs-parent="#accordionExample1">
+											<div class="accordion-body">
+												<textarea class="w-100 form-control" rows="5" placeholder="Написать комментарий..."
+													required></textarea>
+												<button type="submit" class=" comment-btn mt-4">Отправить</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+
+
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<section class="tim" id="tim">
+		<div class="container text-center mt-5">
+			<div class="section-title">
+				<h2>Our team</h2>
+				<p>Check our team</p>
+			</div>
+			<div class="row">
+				<div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+					<div class="member-img">
+						<div class="member-img-img">
+							<img src="https://i.pinimg.com/originals/9f/9e/0a/9f9e0afb4b206b8fb637f925ba8d760c.jpg" alt=""
+								class="img-fluid ">
+							<div class="social">
+								<a href="#">
+									<svg xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em" fill="currentColor"
+										class="bi bi-badge-tm-fill" viewBox="0 0 16 16">
+										<path
+											d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2zm3.295 3.995V11H4.104V5.995h-1.7V5H7v.994H5.295zM8.692 7.01V11H7.633V5.001h1.209l1.71 3.894h.039l1.71-3.894H13.5V11h-1.072V7.01h-.057l-1.42 3.239h-.773L8.75 7.008h-.058z" />
+									</svg>
+								</a>
+
+								<a href="#">
+									<svg xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em" fill="currentColor"
+										class="bi bi-badge-8k-fill" viewBox="0 0 16 16">
+										<path
+											d="M3.9 6.605c0 .51.405.866.95.866.545 0 .945-.356.945-.866s-.4-.852-.945-.852c-.545 0-.95.343-.95.852zm-.192 2.668c0 .589.492.984 1.142.984.646 0 1.143-.395 1.143-.984S5.496 8.28 4.85 8.28c-.65 0-1.142.404-1.142.993z" />
+										<path
+											d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2zm5.17 7.348c0 1.041-.927 1.766-2.333 1.766-1.406 0-2.312-.72-2.312-1.762 0-.954.712-1.384 1.257-1.494v-.053c-.51-.154-1.02-.558-1.02-1.331 0-.914.831-1.587 2.088-1.587 1.253 0 2.083.673 2.083 1.587 0 .782-.523 1.182-1.02 1.331v.053c.545.11 1.257.545 1.257 1.49zM12.102 5h1.306l-2.14 2.584 2.232 3.415h-1.428l-1.679-2.624-.615.699v1.925H8.59V5h1.187v2.685h.057L12.102 5z" />
+									</svg>
+								</a>
+
+								<a href="#">
+									<svg xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em" fill="currentColor"
+										class="bi bi-badge-tm-fill" viewBox="0 0 16 16">
+										<path
+											d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2zm3.295 3.995V11H4.104V5.995h-1.7V5H7v.994H5.295zM8.692 7.01V11H7.633V5.001h1.209l1.71 3.894h.039l1.71-3.894H13.5V11h-1.072V7.01h-.057l-1.42 3.239h-.773L8.75 7.008h-.058z" />
+									</svg>
+								</a>
+
+								<a href="#">
+									<svg xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em" fill="currentColor"
+										class="bi bi-badge-8k-fill" viewBox="0 0 16 16">
+										<path
+											d="M3.9 6.605c0 .51.405.866.95.866.545 0 .945-.356.945-.866s-.4-.852-.945-.852c-.545 0-.95.343-.95.852zm-.192 2.668c0 .589.492.984 1.142.984.646 0 1.143-.395 1.143-.984S5.496 8.28 4.85 8.28c-.65 0-1.142.404-1.142.993z" />
+										<path
+											d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2zm5.17 7.348c0 1.041-.927 1.766-2.333 1.766-1.406 0-2.312-.72-2.312-1.762 0-.954.712-1.384 1.257-1.494v-.053c-.51-.154-1.02-.558-1.02-1.331 0-.914.831-1.587 2.088-1.587 1.253 0 2.083.673 2.083 1.587 0 .782-.523 
+
+					 							 1.182-1.02 1.331v.053c.545.11 1.257.545 1.257 1.49zM12.102 5h1.306l-2.14 2.584 2.232 3.415h-1.428l-1.679-2.624-.615.699v1.925H8.59V5h1.187v2.685h.057L12.102 5z" />
+									</svg>
+								</a>
+							</div>
+
+						</div>
+						<div class="member-info">
+							<h4>Mike Wazovski</h4>
+							<span>CO</span>
+						</div>
+
+					</div>
+				</div>
+
+
+
+				<div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+					<div class="member-img">
+						<div class="member-img-img">
+							<img src="https://yify-torrent.cc/pic/2001/29638/50ba88b700444f6b82bf287029839254.png" alt=""
+								class="img-fluid ">
+							<div class="social">
+								<a href="#">
+									<svg xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em" fill="currentColor"
+										class="bi bi-badge-tm-fill" viewBox="0 0 16 16">
+										<path
+											d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2zm3.295 3.995V11H4.104V5.995h-1.7V5H7v.994H5.295zM8.692 7.01V11H7.633V5.001h1.209l1.71 3.894h.039l1.71-3.894H13.5V11h-1.072V7.01h-.057l-1.42 3.239h-.773L8.75 7.008h-.058z" />
+									</svg>
+								</a>
+
+								<a href="#">
+									<svg xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em" fill="currentColor"
+										class="bi bi-badge-8k-fill" viewBox="0 0 16 16">
+										<path
+											d="M3.9 6.605c0 .51.405.866.95.866.545 0 .945-.356.945-.866s-.4-.852-.945-.852c-.545 0-.95.343-.95.852zm-.192 2.668c0 .589.492.984 1.142.984.646 0 1.143-.395 1.143-.984S5.496 8.28 4.85 8.28c-.65 0-1.142.404-1.142.993z" />
+										<path
+											d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2zm5.17 7.348c0 1.041-.927 1.766-2.333 1.766-1.406 0-2.312-.72-2.312-1.762 0-.954.712-1.384 1.257-1.494v-.053c-.51-.154-1.02-.558-1.02-1.331 0-.914.831-1.587 2.088-1.587 1.253 0 2.083.673 2.083 1.587 0 .782-.523 1.182-1.02 1.331v.053c.545.11 1.257.545 1.257 1.49zM12.102 5h1.306l-2.14 2.584 2.232 3.415h-1.428l-1.679-2.624-.615.699v1.925H8.59V5h1.187v2.685h.057L12.102 5z" />
+									</svg>
+								</a>
+
+								<a href="#">
+									<svg xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em" fill="currentColor"
+										class="bi bi-badge-tm-fill" viewBox="0 0 16 16">
+										<path
+											d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2zm3.295 3.995V11H4.104V5.995h-1.7V5H7v.994H5.295zM8.692 7.01V11H7.633V5.001h1.209l1.71 3.894h.039l1.71-3.894H13.5V11h-1.072V7.01h-.057l-1.42 3.239h-.773L8.75 7.008h-.058z" />
+									</svg>
+								</a>
+
+								<a href="#">
+									<svg xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em" fill="currentColor"
+										class="bi bi-badge-8k-fill" viewBox="0 0 16 16">
+										<path
+											d="M3.9 6.605c0 .51.405.866.95.866.545 0 .945-.356.945-.866s-.4-.852-.945-.852c-.545 0-.95.343-.95.852zm-.192 2.668c0 .589.492.984 1.142.984.646 0 1.143-.395 1.143-.984S5.496 8.28 4.85 8.28c-.65 0-1.142.404-1.142.993z" />
+										<path
+											d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2zm5.17 7.348c0 1.041-.927 1.766-2.333 1.766-1.406 0-2.312-.72-2.312-1.762 0-.954.712-1.384 1.257-1.494v-.053c-.51-.154-1.02-.558-1.02-1.331 0-.914.831-1.587 2.088-1.587 1.253 0 2.083.673 2.083 1.587 0 .782-.523 1.182-1.02 1.331v.053c.545.11 1.257.545 1.257 1.49zM12.102 5h1.306l-2.14 2.584 2.232 3.415h-1.428l-1.679-2.624-.615.699v1.925H8.59V5h1.187v2.685h.057L12.102 5z" />
+									</svg>
+								</a>
+							</div>
+
+						</div>
+						<div class="member-info ">
+							<h4>John Saliwan</h4>
+							<span>President</span>
+						</div>
+
+
+					</div>
+				</div>
+
+
+				<div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+					<div class="member-img">
+						<div class="member-img-img">
+							<img src="https://i.ytimg.com/vi/B5NauD6HTbk/maxresdefault.jpg" alt="" class="img-fluid ">
+
+							<div class="social">
+								<a href="#">
+									<svg xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em" fill="currentColor"
+										class="bi bi-badge-tm-fill" viewBox="0 0 16 16">
+										<path
+											d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2zm3.295 3.995V11H4.104V5.995h-1.7V5H7v.994H5.295zM8.692 7.01V11H7.633V5.001h1.209l1.71 3.894h.039l1.71-3.894H13.5V11h-1.072V7.01h-.057l-1.42 3.239h-.773L8.75 7.008h-.058z" />
+									</svg>
+								</a>
+
+								<a href="#">
+									<svg xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em" fill="currentColor"
+										class="bi bi-badge-8k-fill" viewBox="0 0 16 16">
+										<path
+											d="M3.9 6.605c0 .51.405.866.95.866.545 0 .945-.356.945-.866s-.4-.852-.945-.852c-.545 0-.95.343-.95.852zm-.192 2.668c0 .589.492.984 1.142.984.646 0 1.143-.395 1.143-.984S5.496 8.28 4.85 8.28c-.65 0-1.142.404-1.142.993z" />
+										<path
+											d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2zm5.17 7.348c0 1.041-.927 1.766-2.333 1.766-1.406 0-2.312-.72-2.312-1.762 0-.954.712-1.384 1.257-1.494v-.053c-.51-.154-1.02-.558-1.02-1.331 0-.914.831-1.587 2.088-1.587 1.253 0 2.083.673 2.083 1.587 0 .782-.523 1.182-1.02 1.331v.053c.545.11 1.257.545 1.257 1.49zM12.102 5h1.306l-2.14 2.584 2.232 3.415h-1.428l-1.679-2.624-.615.699v1.925H8.59V5h1.187v2.685h.057L12.102 5z" />
+									</svg>
+								</a>
+
+								<a href="#">
+									<svg xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em" fill="currentColor"
+										class="bi bi-badge-tm-fill" viewBox="0 0 16 16">
+										<path
+											d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2zm3.295 3.995V11H4.104V5.995h-1.7V5H7v.994H5.295zM8.692 7.01V11H7.633V5.001h1.209l1.71 3.894h.039l1.71-3.894H13.5V11h-1.072V7.01h-.057l-1.42 3.239h-.773L8.75 7.008h-.058z" />
+									</svg>
+								</a>
+
+								<a href="#">
+									<svg xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em" fill="currentColor"
+										class="bi bi-badge-8k-fill" viewBox="0 0 16 16">
+										<path
+											d="M3.9 6.605c0 .51.405.866.95.866.545 0 .945-.356.945-.866s-.4-.852-.945-.852c-.545 0-.95.343-.95.852zm-.192 2.668c0 .589.492.984 1.142.984.646 0 1.143-.395 1.143-.984S5.496 8.28 4.85 8.28c-.65 0-1.142.404-1.142.993z" />
+										<path
+											d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2zm5.17 7.348c0 1.041-.927 1.766-2.333 1.766-1.406 0-2.312-.72-2.312-1.762 0-.954.712-1.384 1.257-1.494v-.053c-.51-.154-1.02-.558-1.02-1.331 0-.914.831-1.587 2.088-1.587 1.253 0 2.083.673 2.083 1.587 0 .782-.523 1.182-1.02 1.331v.053c.545.11 1.257.545 1.257 1.49zM12.102 5h1.306l-2.14 2.584 2.232 3.415h-1.428l-1.679-2.624-.615.699v1.925H8.59V5h1.187v2.685h.057L12.102 5z" />
+									</svg>
+								</a>
+							</div>
+						</div>
+
+						<div class="member-info ">
+							<h4>Boris Jevotnoye</h4>
+							<span>Bad guy</span>
+						</div>
+
+					</div>
+				</div>
+
+
+				<div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+					<div class="member-img">
+						<div class="member-img-img">
+							<img src="https://www.prizyv.ru/wp-content/uploads/2020/06/20140531_181048.png" alt=""
+								class="img-fluid ">
+							<div class="social">
+								<a href="#">
+									<svg xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em" fill="currentColor"
+										class="bi bi-badge-tm-fill" viewBox="0 0 16 16">
+										<path
+											d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2zm3.295 3.995V11H4.104V5.995h-1.7V5H7v.994H5.295zM8.692 7.01V11H7.633V5.001h1.209l1.71 3.894h.039l1.71-3.894H13.5V11h-1.072V7.01h-.057l-1.42 3.239h-.773L8.75 7.008h-.058z" />
+									</svg>
+								</a>
+
+								<a href="#">
+									<svg xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em" fill="currentColor"
+										class="bi bi-badge-8k-fill" viewBox="0 0 16 16">
+										<path
+											d="M3.9 6.605c0 .51.405.866.95.866.545 0 .945-.356.945-.866s-.4-.852-.945-.852c-.545 0-.95.343-.95.852zm-.192 2.668c0 .589.492.984 1.142.984.646 0 1.143-.395 1.143-.984S5.496 8.28 4.85 8.28c-.65 0-1.142.404-1.142.993z" />
+										<path
+											d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2zm5.17 7.348c0 1.041-.927 1.766-2.333 1.766-1.406 0-2.312-.72-2.312-1.762 0-.954.712-1.384 1.257-1.494v-.053c-.51-.154-1.02-.558-1.02-1.331 0-.914.831-1.587 2.088-1.587 1.253 0 2.083.673 2.083 1.587 0 .782-.523 1.182-1.02 1.331v.053c.545.11 1.257.545 1.257 1.49zM12.102 5h1.306l-2.14 2.584 2.232 3.415h-1.428l-1.679-2.624-.615.699v1.925H8.59V5h1.187v2.685h.057L12.102 5z" />
+									</svg>
+								</a>
+
+								<a href="#">
+									<svg xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em" fill="currentColor"
+										class="bi bi-badge-tm-fill" viewBox="0 0 16 16">
+										<path
+											d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2zm3.295 3.995V11H4.104V5.995h-1.7V5H7v.994H5.295zM8.692 7.01V11H7.633V5.001h1.209l1.71 3.894h.039l1.71-3.894H13.5V11h-1.072V7.01h-.057l-1.42 3.239h-.773L8.75 7.008h-.058z" />
+									</svg>
+								</a>
+
+								<a href="#">
+									<svg xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em" fill="currentColor"
+										class="bi bi-badge-8k-fill" viewBox="0 0 16 16">
+										<path
+											d="M3.9 6.605c0 .51.405.866.95.866.545 0 .945-.356.945-.866s-.4-.852-.945-.852c-.545 0-.95.343-.95.852zm-.192 2.668c0 .589.492.984 1.142.984.646 0 1.143-.395 1.143-.984S5.496 8.28 4.85 8.28c-.65 0-1.142.404-1.142.993z" />
+										<path
+											d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2zm5.17 7.348c0 1.041-.927 1.766-2.333 1.766-1.406 0-2.312-.72-2.312-1.762 0-.954.712-1.384 1.257-1.494v-.053c-.51-.154-1.02-.558-1.02-1.331 0-.914.831-1.587 2.088-1.587 1.253 0 2.083.673 2.083 1.587 0 .782-.523 1.182-1.02 1.331v.053c.545.11 1.257.545 1.257 1.49zM12.102 5h1.306l-2.14 2.584 2.232 3.415h-1.428l-1.679-2.624-.615.699v1.925H8.59V5h1.187v2.685h.057L12.102 5z" />
+									</svg>
+								</a>
+							</div>
+						</div>
+
+						<div class="member-info ">
+							<h4>Will Smith</h4>
+							<span>Good guy</span>
+						</div>
+
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+	<section class="services text-center">
+		<div class="container">
+			<div class="sectoin-title">
+				<h2>Services</h2>
+				<p>Check our services</p>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-4 col-md-6  col-xxl-12 mx-auto d-flex align-items-stretch justify-content-center">
+					<div class="icon-box">
+						<div class="icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+								class="bi bi-basket-fill" viewBox="0 0 16 16">
+								<path
+									d="M5.071 1.243a.5.5 0 0 1 .858.514L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v5a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 6h1.717L5.07 1.243zM3.5 10.5a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3z" />
+							</svg>
+						</div>
+						<h4>Lorem, ipsum, dolor.</h4>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium exercitationem aut dolorem!
+							Minus, modi, quisquam!</p>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6 col-xxl-12 d-flex align-items-stretch justify-content-center">
+					<div class="icon-box">
+						<div class="icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+								class="bi bi-basket-fill" viewBox="0 0 16 16">
+								<path
+									d="M5.071 1.243a.5.5 0 0 1 .858.514L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v5a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 6h1.717L5.07 1.243zM3.5 10.5a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3z" />
+							</svg>
+						</div>
+						<h4>Lorem, ipsum, dolor.</h4>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium exercitationem aut dolorem!
+							Minus, modi, quisquam!</p>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6 col-xxl-12 d-flex align-items-stretch justify-content-center">
+					<div class="icon-box">
+						<div class="icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+								class="bi bi-basket-fill" viewBox="0 0 16 16">
+								<path
+									d="M5.071 1.243a.5.5 0 0 1 .858.514L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v5a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 6h1.717L5.07 1.243zM3.5 10.5a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3z" />
+							</svg>
+						</div>
+						<h4>Lorem, ipsum, dolor.</h4>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium exercitationem aut dolorem!
+							Minus, modi, quisquam!</p>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6 col-xxl-12 d-flex align-items-stretch justify-content-center">
+					<div class="icon-box">
+						<div class="icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+								class="bi bi-basket-fill" viewBox="0 0 16 16">
+								<path
+									d="M5.071 1.243a.5.5 0 0 1 .858.514L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v5a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 6h1.717L5.07 1.243zM3.5 10.5a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3z" />
+							</svg>
+						</div>
+						<h4>Lorem, ipsum, dolor.</h4>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium exercitationem aut dolorem!
+							Minus, modi, quisquam!</p>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6 col-xxl-12 d-flex align-items-stretch justify-content-center">
+					<div class="icon-box">
+						<div class="icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+								class="bi bi-basket-fill" viewBox="0 0 16 16">
+								<path
+									d="M5.071 1.243a.5.5 0 0 1 .858.514L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v5a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 6h1.717L5.07 1.243zM3.5 10.5a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3z" />
+							</svg>
+						</div>
+						<h4>Lorem, ipsum, dolor.</h4>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium exercitationem aut dolorem!
+							Minus, modi, quisquam!</p>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6 col-xxl-12 d-flex align-items-stretch justify-content-center">
+					<div class="icon-box">
+						<div class="icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+								class="bi bi-basket-fill" viewBox="0 0 16 16">
+								<path
+									d="M5.071 1.243a.5.5 0 0 1 .858.514L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v5a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 6h1.717L5.07 1.243zM3.5 10.5a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3z" />
+							</svg>
+						</div>
+						<h4>Lorem, ipsum, dolor.</h4>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium exercitationem aut dolorem!
+							Minus, modi, quisquam!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<section class="contact ">
+		<div class="container">
+			<h2 class=" text-center">Contacts</h2>
+			<p class="text-center">Contact us</p>
+			<div class="row">
+				<div class="col-10 mx-auto justify-content-center">
+					<div style="width: 100%"><iframe width="100%" height="400" frameborder="0" scrolling="no"
+							marginheight="0" marginwidth="0"
+							src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=%D0%A1%D0%B0%D1%80%D0%B0%D1%82%D0%BE%D0%B2,%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%A7%D0%B0%D0%B9%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE%203+(Danya%20Chindin)&amp;t=p&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+					</div>
+				</div>
+			</div>
+
+			<div class="row mt-5 mb-4">
+				<div class="col-lg-4">
+					<div class="info">
+						<div class="adress">
+							<div class="info-icon">
+								<svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" fill="currentColor"
+									class="bi bi-binoculars-fill" viewBox="0 0 16 16">
+									<path
+										d="M4.5 1A1.5 1.5 0 0 0 3 2.5V3h4v-.5A1.5 1.5 0 0 0 5.5 1h-1zM7 4v1h2V4h4v.882a.5.5 0 0 0 .276.447l.895.447A1.5 1.5 0 0 1 15 7.118V13H9v-1.5a.5.5 0 0 1 .146-.354l.854-.853V9.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v.793l.854.853A.5.5 0 0 1 7 11.5V13H1V7.118a1.5 1.5 0 0 1 .83-1.342l.894-.447A.5.5 0 0 0 3 4.882V4h4zM1 14v.5A1.5 1.5 0 0 0 2.5 16h3A1.5 1.5 0 0 0 7 14.5V14H1zm8 0v.5a1.5 1.5 0 0 0 1.5 1.5h3a1.5 1.5 0 0 0 1.5-1.5V14H9zm4-11H9v-.5A1.5 1.5 0 0 1 10.5 1h1A1.5 1.5 0 0 1 13 2.5V3z" />
+								</svg>
+							</div>
+
+							<h4>Location:</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+						</div>
+
+						<div class="email">
+
+							<div class="info-icon">
+								<svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" fill="currentColor"
+									class="bi bi-binoculars-fill" viewBox="0 0 16 16">
+									<path
+										d="M4.5 1A1.5 1.5 0 0 0 3 2.5V3h4v-.5A1.5 1.5 0 0 0 5.5 1h-1zM7 4v1h2V4h4v.882a.5.5 0 0 0 .276.447l.895.447A1.5 1.5 0 0 1 15 7.118V13H9v-1.5a.5.5 0 0 1 .146-.354l.854-.853V9.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v.793l.854.853A.5.5 0 0 1 7 11.5V13H1V7.118a1.5 1.5 0 0 1 .83-1.342l.894-.447A.5.5 0 0 0 3 4.882V4h4zM1 14v.5A1.5 1.5 0 0 0 2.5 16h3A1.5 1.5 0 0 0 7 14.5V14H1zm8 0v.5a1.5 1.5 0 0 0 1.5 1.5h3a1.5 1.5 0 0 0 1.5-1.5V14H9zm4-11H9v-.5A1.5 1.5 0 0 1 10.5 1h1A1.5 1.5 0 0 1 13 2.5V3z" />
+								</svg>
+							</div>
+
+
+							<h4>Email:</h4>
+							<p>Lorem@mail.com</p>
+						</div>
+
+
+						<div class="phone">
+
+							<div class="info-icon">
+								<svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" fill="currentColor"
+									class="bi bi-binoculars-fill" viewBox="0 0 16 16">
+									<path
+										d="M4.5 1A1.5 1.5 0 0 0 3 2.5V3h4v-.5A1.5 1.5 0 0 0 5.5 1h-1zM7 4v1h2V4h4v.882a.5.5 0 0 0 .276.447l.895.447A1.5 1.5 0 0 1 15 7.118V13H9v-1.5a.5.5 0 0 1 .146-.354l.854-.853V9.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v.793l.854.853A.5.5 0 0 1 7 11.5V13H1V7.118a1.5 1.5 0 0 1 .83-1.342l.894-.447A.5.5 0 0 0 3 4.882V4h4zM1 14v.5A1.5 1.5 0 0 0 2.5 16h3A1.5 1.5 0 0 0 7 14.5V14H1zm8 0v.5a1.5 1.5 0 0 0 1.5 1.5h3a1.5 1.5 0 0 0 1.5-1.5V14H9zm4-11H9v-.5A1.5 1.5 0 0 1 10.5 1h1A1.5 1.5 0 0 1 13 2.5V3z" />
+								</svg>
+							</div>
+
+
+							<h4>Call:</h4>
+							<p>+134031328856</p>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="col-lg-8">
+					<form action="#">
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="form-group">
+									<input type="text" class="form-control mt-3" placeholder="Name" required>
+								</div>
+							</div>
+
+							<div class="col-lg-6">
+								<div class="form-group">
+									<input type="text" class="form-control mt-3" placeholder="Surname" required>
+								</div>
+							</div>
+
+							<div class="col-lg-6">
+								<div class="form-group">
+									<input type="email" class="form-control mt-3" placeholder="Email" required>
+								</div>
+							</div>
+
+							<div class="col-lg-6">
+								<div class="form-group">
+									<input type="number" class="form-control mt-3" placeholder="Phone number" required>
+								</div>
+							</div>
+
+							<div class="col-12  justify-content-center">
+								<textarea placeholder="Text" id="" cols="20" rows="5" class="form-control mt-3"></textarea>
+								<button type="submit" class="btn btn-primary mt-3 ">Send</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<footer class="mt-5 text-center">
+		<div class="footer-top justify-content-center align-items-center">
+			<div class="container ">
+				<div class="row">
+					<div class="col-lg-3 col-md-12 mb-3 justify-content-center">
+						<div class="footer-info">
+							<h3>Danchig</h3>
+							<p>
+								Portfolio<br>
+								New Jersey, USA<br>
+								<strong>Phone:</strong> +134031328856<br>
+								<strong>Email:</strong> Lorem@mail.ru
+							</p>
+							<div class="social-links mt-3">
+								<div class="soc vk"><a href="#" class="mx-auto"></a></div>
+								<div class="soc face"><a href="#"></a></div>
+								<div class="soc inst"><a href="#"></a></div>
+								<div class="soc vk"><a href="#"></a></div>
+
+							</div>
+
+
+						</div>
+
+					</div>
+					<hr class="mt-1">
+					<div class="col-lg-3 col-md-6 footer-links  mt-3 mt-lg-0">
+						<h4>Useful links</h4>
+						<div class="ul mx-auto text-center">
+							<ul>
+								<li>
+									<a href="#">Home</a>
+								</li>
+								<li>
+									<a href="#">Home</a>
+								</li>
+								<li>
+									<a href="#">Home</a>
+								</li>
+								<li>
+									<a href="#">Home</a>
+								</li>
+								<li>
+									<a href="#">Home</a>
+								</li>
+							</ul>
+						</div>
+						<hr class="ml">
+					</div>
+
+					<div class="col-lg-3 col-md-6 footer-links mt-3 mt-lg-0">
+						<h4>Service</h4>
+						<ul>
+							<li>
+								<a href="#">Questions</a>
+							</li>
+							<li>
+								<a href="#">Service</a>
+							</li>
+							<li>
+								<a href="#">Adress</a>
+							</li>
+							<li>
+								<a href="#">Stylesheet</a>
+							</li>
+							<li>
+								<a href="#">Phone</a>
+							</li>
+						</ul>
+
+						<hr class="ml">
+					</div>
+					<hr class="mlg">
+					<div class="col-lg-3 col-md-12 footer-newsletter text-center">
+						<h4>Our news</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque debitis est doloribus sed harum
+							provident?</p>
+						<form>
+							<input type="email" class="form-control">
+							<button type="button" class="btn btn-primary text mt-3">Submit</button>
+						</form>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
